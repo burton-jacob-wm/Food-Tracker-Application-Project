@@ -1,0 +1,90 @@
+body{
+    background-image: url(https://imtoolsuite.com/members/tools/minisite/images/custom/bg_0AQjTQ-489_26_green-background.gif);
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-left: 8px;
+}
+
+
+td {
+    width: 250px;
+    text-align: center;
+}
+#foodtracker {
+
+}
+#formquestions {
+
+}
+#results {
+    table-layout: fixed;
+    background-color: rgba(225, 225, 225, 0.51);
+    border: ridge 3px #838383;
+}
+#results td {
+    word-wrap: break-word;
+    border: solid 2px #555;
+    max-width: 250px;
+}
+#emptyCell1{
+    background-color: rgba(198, 198, 198, 0.50);
+    width: 90px;
+}
+#logo {
+    width: 32px;
+    height: 32px;
+    float: left;
+    position: relative;
+    top: 20px;
+}
+#formFood {
+    border: ridge 5px #888;
+}
+#formLegend {
+    border: ridge 2px #888;
+}
+
+/* CLASSES */
+.container {
+    max-width: 960px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+.header {
+    margin: 0 auto;
+    max-width: 916px;
+    min-height: 50px;
+    background-color: #fff;
+    border: solid 2px #000;
+    padding: 7px 20px;
+}
+.content {
+    background-color: #fff;
+    padding: 7px 20px;
+    border: solid 2px #000;
+}
+.resultsTable{
+    background-color: #fff;
+    padding: 7px 20px;
+    border: solid 2px #000;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+/* Scroll Bar */
+.resultsTable::-webkit-scrollbar {
+    width: 10px;
+}
+
+.resultsTable::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.resultsTable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.7);
+}

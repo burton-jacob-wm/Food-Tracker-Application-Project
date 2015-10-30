@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Tracker</title>
+    <link type="text/css" href="stylesheet.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<!--Calling the JavaScript Files-->
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+
+<div class="header">
+    <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dollar_sign_in_circle.svg/1024px-Dollar_sign_in_circle.svg.png">
+    <h1 style="padding-left:1.75em">Track Your Purchases</h1>
+</div>
+<br>
+<div class="container">
+    <div class="content">
+    <br>
+    <form id="foodtracker">
+        <fieldset id="formFood">
+            <legend id="formLegend">Food Tracker:</legend>
+            <!--Beginning of the TABLE which the form is in.-->
+            <table>
+                <tr>
+                    <td>Food:</td>
+                    <td>Purchase Date:</td>
+                    <td>Expiration Date:</td>
+                </tr>
+                <tbody>
+                    <tr>
+                        <!--Inputs where users type in answers.-->
+                        <td><input type="text" name="foodname" id="food" value=""></td>
+                        <td><input type="date" name="purchase" id="purchase" value=""></td>
+                        <td><input type="date" name="expiration" id="expiration" value=""></td>
+                    </tr>
+                    <tr>
+                        <td>Description:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea rows="4" cols="60" name="description" id="description"></textarea></td>
+                        <!--Buttons for submit and reset.-->
+                        <td><button type="button" onclick="submitForm()">Submit</button> <button type="reset">Reset</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+    <br>
+    </div>
+    <br>
+    <div class="resultsTable">
+    <!--Table with results-->
+    <table border="1" id="results">
+        <tr id="resultsHeader">
+            <td>Food</td>
+            <td>Purchase Date</td>
+            <td>Expiration Date</td>
+            <td>Description</td>
+            <td id="emptyCell1" style="border: dotted 2px #555"></td>
+        </tr>
+        <tbody>
+
+        </tbody>
+    </table>
+    </div>
+
+</div>
+</body>
+
+</html>
